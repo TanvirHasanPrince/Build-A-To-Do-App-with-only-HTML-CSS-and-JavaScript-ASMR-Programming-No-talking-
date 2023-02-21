@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <!-- Start -->
+
+    <!-- Start: Container for the whole app -->
+
+    <section class="container">
+      <h1 id="title">To Do List</h1>
+
+      <!-- Start: Adding Task Form -->
+
+      <form class="new-task-container">
+        <input type="text" id="new-task-input" />
+        <br />
+        <br />
+        <input type="submit" id="'addTask" value="Add Task" />
+      </form>
+      <!-- End: Adding Task Form -->
+
+      <!-- Start: Incomplete Tasks -->
+      <div class="todo-list">
+        <h2>Incomplete Tasks</h2>
+        <ul id="incomplete-ul-items">
+          <li class="item">
+            <input type="checkbox" />
+            <label> Task Name</label>
+          </li>
+        </ul>
+      </div>
+      <!-- End: Incomplete Tasks -->
+
+      <!-- Start: Completed Tasks -->
+
+      <div class="complete-list">
+        <h2>Completed Task</h2>
+        <ul id="complete-ul-items">
+          <li class="item">
+            Task Name
+            <button class="delete">Delete</button>
+          </li>
+        </ul>
+      </div>
+      <!-- End: Completed Tasks -->
+    </section>
+
+    <!-- End: Container for the whole app -->
+
+    <!-- End -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
